@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--body-background);
+    background-image: url(./imagens/background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+
+/* CSS DO CABEÇALHO */
+header{
+    padding: 3.2rem 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.logo span{
+    color: var(--color-logo);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.navegacao ul{ display: flex; align-items: center; gap: 3rem; }
+.navegacao ul li{list-style: none; padding: 0 1rem;}
+.menu-link{color: var(--text-color);font-size: 18px;font-weight: 400; text-decoration: none; transition: .5s;}
+.menu-link:hover{
+    font-size: 22px;
+    text-shadow: 3px 3px 10px #ff5b50;
+}
+
+.carteira-NFT button{
+    background-color: var(--text-color);
+    border: none;
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--black-text);
+    font-weight: 700;
+    gap: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.carteira-NFT button:hover{
+    box-shadow: 0px 0px 10px #ff5b50;
+    font-size:16px;
+}
+
+/* FIM DO CSS DO CABEÇALHO */
+
+/* CSS DA APRESENTACAO PRIMEIRA PARTE DO CONTEUDO PRINCIPAL */
+.conteudo-apresentacao{
+    display: flex;
+    align-items: center;
+    margin: 0 5rem;
+    margin-top: 3rem;
+    gap: 2rem;
+    justify-content: center;
+}
+/*-----------------------------------------------------*/
+.apresentacao-conteudo-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 25%;
+}
+.apresentacao-conteudo-esquerdo p{
+   color: var(--text-color);
+   font-size: 14px;
+}
+.apresentacao-artistas{
+    display: flex;
+    align-items: end;
+}
+.apresentacao-artistas img{
+    width: 120px;
+}
+.apresentacao-artistas span{
+    font-weight: 700;
+}
+/*-----------------------------------------------------*/
+.apresentacao-conteudo-meio{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao-conteudo-meio p{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 40px;
+}
+.apresentacao-conteudo-meio span{
+    color: var(--color-logo);
+    font-weight: 700;
+    font-size: 40px;
+}
+/*-----------------------------------------------------*/
+.apresentacao-conteudo-direito{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+/*-----------------------------------------------------*/
+/* FIM DO CSS DA APRESENTACAO PRIMEIRA PARTE DO CONTEUDO PRINCIPAL */
+
+/*CSS DA SEGUNDA PARTE DO CONTEUDO PRINCIPAL -> GALERIA */
+
+.galeria{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.galeria img{
+    border: 1px solid var(--text-color);
+}
+
+.galeria1, .galeria2{
+    display: flex;
+    gap: 1rem;
+}
+.galeria1 .galeria-foto, .galeria2 .galeria-foto{
+    width: 280px;
+    height: 195px;
+}
+/*-----------------------------------------------------*/
+
+/* FIM DO CSS DA SEGUNDA PARTE DO CONTEUDO PRINCIPAL -> GALERIA */
+
+/* CSS DA TERCEIRA PARTE DO CONTEUDO -> BANNER 1 */
+
+.conteudo-banner-1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*-----------------------------------------------------*/
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--subtitle-color);
+    flex-basis: 25%;
+    gap: 2rem;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+aside div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+aside span{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 50px;
+}
+aside p{
+    color: var(--subtitle-color);
+}
+/*-----------------------------------------------------*/
+
+.conteudo-superior-banner-1{
+    display: flex;
+    flex-basis: 75%;
+    flex-direction: column;
+}
+
+.conteudos-superiores{
+    display: flex;
+}
+
+.conteudo-esquerdo, .conteudo-direito{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 3.5rem;
+}
+.conteudo-esquerdo p, .conteudo-direito p{
+    color: #fff;
+}
+.conteudo-esquerdo a, .conteudo-direito a{
+    color: #fff;
+}
+.conteudo-esquerdo span, .conteudo-direito span{
+    color: var(--color-logo);
+    text-decoration: underline;
+}
+/*-----------------------------------------------------*/
+
+.banner-1 img{
+    width: 100%;
+}
+/* FIM DO CSS DA TERCEIRA PARTE DO CONTEUDO -> BANNER 1 */
+
+/* CSS DA QUARTA PARTE DO CONTEUDO -> POPULARES DA SEMANA */
+
+.conteudo-populares-semana{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo-populares-semana{
+    text-align: left;
+    flex-basis: 100%;
+    margin: 3rem 0 6rem 4rem;
+}
+.titulo-populares-semana span{
+    color: var(--color-logo); 
+    font-size: 50px;
+    font-weight: 700;
+}
+.titulo-populares-semana p{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container-astronauta{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-astronauta h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+.container-astronauta p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--subtitle-color);
+    font-weight: 700;
+}
+.container-astronauta span{
+    color: var(--color-logo);
+}
+
+.astronautas-esquerda, .astronautas-direita{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+    gap: 2rem;
+}
+.astronautas-esquerda{
+    border-right: 1px solid var(--subtitle-color) ;
+}
+
+.astronauta {
+    width: 250px;
+}
+
+/* FIM DO CSS DA QUARTA PARTE DO CONTEUDO -> POPULARES DA SEMANA */
+
+/* CSS DA QUINTA PARTE DO CONTEUDO -> MELHORES ARTISTAS */
+
+.melhores-artistas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem 0;
+}
+
+.titulo-melhores-artistas{flex-basis: 100%; text-align: center;}
+.titulo-melhores-artistas p{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.titulo-melhores-artistas span{color: #ff5b50;}
+
+.container-artistas{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;    
+    align-items: center;
+    width: 100%;
+}
+
+.container-artistas h2{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    gap: 2rem;
+}
+
+.container-artistas h2 img{
+    cursor: pointer;
+}
+
+.artistas-superiores, .artistas-inferiores{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.artista{
+    display: flex;
+    background-color: var(--card-color);
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.artista img{
+    width: 70px;
+}
+.texto-artista{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.texto-artista span{
+    color: #ff5b50;
+    
+}
+/* FIM DO CSS DA QUINTA PARTE DO CONTEUDO -> MELHORES ARTISTAS */
+
+/* CSS DO RODAPÉ*/
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    background: var(--card-color);
+}
+
+.superior-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 3rem 2rem 3rem;
+    border-bottom:1px solid var(--subtitle-color) ;
+}
+
+.superior-rodape h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.superior-rodape span{
+    color: var(--color-logo);
+    font-size: 30px;
+    font-weight: 700;
+}
+.superior-rodape img{
+    width:20px;
+}
+.superior-rodape div{
+    width: 65px;
+    background-color: #ff5b50;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio-rodape{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.conteudo-esquerdo-meio-rodape{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding: 3rem;
+    border-right: 1px solid var(--subtitle-color);
+}
+
+.conteudo-esquerdo-meio-rodape p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.conteudo-esquerdo-meio-rodape span{
+    color: #ff5b50;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.conteudo-esquerdo-meio-rodape .envio-email{display: flex; margin-top: 1rem;}
+
+.conteudo-esquerdo-meio-rodape input{
+    padding: .8rem; 
+    background-color: #0e0e0e; 
+    color: #5a5757; 
+    border: none;
+}
+
+.conteudo-esquerdo-meio-rodape button{ 
+    padding: 0 .7rem; 
+    background-color: #ffffff; 
+    border: none; 
+    font-weight: 700;
+    font-size: 15px; 
+    cursor: pointer;
+}
+
+
+.conteudo-direito-meio-rodape{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-basis: 70%;
+    padding: 0 3rem; 
+}
+.conteudo-direito-meio-rodape ul li:first-child{
+    color: #fff;
+    font-weight: 700;
+    cursor:auto;
+}
+.conteudo-direito-meio-rodape li{list-style: none; padding: .5rem; color: #5a5757; cursor: pointer;}
+
+.final-do-rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.final-do-rodape a{
+    text-decoration: none;
+    color: var(--subtitle-color);
+    font-size: 18px;
+}
+
+.final-do-rodape img{
+    width: 25px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.final-do-rodape h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.final-do-rodape span{
+    color: #ff5b50;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.autor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ESTILIZAÇÃO DE ELEMENTOS UTILIZADOS NA AÇÃO RESPONSIVA DO PROJETO*/
+
+.menu-mobile-icon{
+    display: none;
+}
+
+.menu-mobile button{
+    background-color: transparent;
+    border: none;
+}
+.menu-mobile-icon {
+    max-width:30px;
+}
+
+.menu-mobile-itens{
+    display: none;
+}
+
+.carteira-NFT-mobile button{
+    background-color: var(--text-color);
+    border: none;
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--black-text);
+    font-weight: 700;
+    gap: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

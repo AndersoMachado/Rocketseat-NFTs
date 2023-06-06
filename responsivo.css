@@ -1,0 +1,193 @@
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+@media screen and (max-width:850px) {
+    body{
+        background-color: var(--body-background);
+        background-image: url(./imagens/background.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    /* CSS RESPONSIVO MENU*/
+    .logo, .logo span{
+        font-size: 25px;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    .navegacao{
+        display: none;
+    }
+    .menu-mobile-icon{
+        display: block;
+    }
+
+    .aberto{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: black;
+        opacity: 90%;
+    }
+    .aberto li{
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    .carteira-NFT{
+        display: none;
+    }
+
+    .carteira-NFT-mobile{
+        display: flex;
+    }
+
+
+
+    /* CSS RESPONSIVO PRIMEIRA PARTE, LOGO, ARTISTAS ABAIXO DO MENU*/
+    .conteudo-apresentacao{
+        flex-wrap:wrap-reverse;
+        margin: 0 2rem;
+    }
+
+    .apresentacao-conteudo-meio p, .apresentacao-conteudo-meio span{
+        font-size: 20px;
+    }
+
+    .apresentacao-conteudo-direito img{
+        width: 120px;
+    }
+
+    .apresentacao-conteudo-esquerdo p{
+
+        font-size: 18px;
+        flex-basis: 100%
+     }
+     .apresentacao-conteudo-esquerdo{
+        margin: 2rem 0;
+     }
+
+     /* CSS RESPONSIVO SEGUNDA PARTE, GALERIA DE FOTOS*/
+
+     .galeria{
+        margin-top: 0;
+     }
+
+     .galeria1, .galeria2{
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+
+     .galeria1 .galeria-foto, .galeria2 .galeria-foto{
+        width: 140px;
+        height: 100px;
+     }
+
+     /* CSS RESPONSIVO DA TERCEIRA PARTE DO CONTEUDO -> BANNER 1 */
+
+     .conteudo-banner-1{
+        display: block;
+        margin-top: 3rem;
+        
+    }
+     aside{
+        flex-basis: 100%;
+        border: none;
+        border-top: 1px  solid var(--subtitle-color);
+        border-bottom: 1px  solid var(--subtitle-color);
+        padding: 1rem 0;
+     }
+     .conteudos-superiores{
+        flex-direction: column;
+    }
+     .conteudo-direito, .conteudo-esquerdo{
+        padding: 1rem 3rem 1rem 3rem;
+        gap: 2rem;
+     }
+     .conteudo-esquerdo p, .conteudo-direito p, .conteudo-esquerdo span, .conteudo-direito span {
+        font-size: 14px;
+    }
+
+    /* CSS RESPONSIVO DA QUARTA PARTE DO CONTEUDO -> MAIS POPULARES */
+    .conteudo-populares-semana{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .titulo-populares-semana{
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .astronautas-esquerda{
+        border: none;
+    }
+    .astronautas-esquerda, .astronautas-direita{
+        gap: 3rem;
+    }
+
+    /* CSS RESPONSIVO DA QUINTA PARTE DO CONTEUDO -> MELHORES ARTISTAS */
+    .artistas-superiores, .artistas-inferiores{
+        flex-direction: column;
+    }
+
+    /* CSS RESPONSIVO DO RODAPÉ*/
+    
+    .superior-rodape{
+        padding: 1rem;
+    }
+    .superior-rodape h2,.superior-rodape span{
+        font-size: 20px;
+    }
+    .superior-rodape img{
+        width:15px;
+    }
+    .superior-rodape div{
+        width: 35px;
+        height: 35px;
+     
+    }
+
+    .meio-rodape{
+        flex-wrap: wrap;
+    }
+    
+    .conteudo-esquerdo-meio-rodape{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 3rem;
+        border: none;
+        border-bottom: 1px solid var(--subtitle-color);
+    }
+    .conteudo-direito-meio-rodape{
+        gap: 1rem;
+        flex-basis: 100%;
+        padding: 0 1rem; 
+    }
+
+    .final-do-rodape{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem
+    }
+
+    .autor{
+        flex-direction: row;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+
+}
